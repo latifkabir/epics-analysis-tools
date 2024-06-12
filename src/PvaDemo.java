@@ -15,8 +15,8 @@ import java.util.concurrent.CountDownLatch;
 /** Write elements of data served by core-pva/src/test/java/org/epics/pva/server/BoolDemo.java
  *  @author Kay Kasemir
  */
-@SuppressWarnings("nls")
-public class PVACustomStructDemo
+
+public class PvaDemo
 {
     public static void main(String[] args) throws Exception
     {

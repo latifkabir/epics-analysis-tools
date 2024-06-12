@@ -1,13 +1,10 @@
-// Filename: BasicDemo.java
-// Description: 
-// Author: Latif Kabir < latifkabir.github.io >
 import java.util.Random;
 import javax.swing.JFrame;
 
 import org.jlab.groot.data.H1F;
 import org.jlab.groot.graphics.EmbeddedCanvas;
 
-public class BasicDemo {
+public class GrootDemo {
 
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("Basic GROOT Demo");
