@@ -1,5 +1,5 @@
 lib/
-jdk-19.0.1/
+jdk-19.0.1
 *.class
 .project
 .classpath
