@@ -21,19 +21,18 @@
 - Clone/download the repository for this [link](https://github.com/gavalian/groot).
 - Source your environment to activete JDK 19.
 - Generate jar package: `mvn package`
-- Generate the documentation: 
+- Generate the documentation using the shell script provided. 
 - Save the jar with dependencies and add them to your `CLASSPATH`.
 
 ## Prepare pvAccess java client
 
 - If you have a local copy of Pheobus, add the following path to your `CLASSPATH`: `<phoebus build>/target/lib/`. Instead of the whole thing, you could just clone only the Phoebus core from [here](https://github.com/ControlSystemStudio/phoebus/tree/master/core) and make a jar file of the Phoebus core framework and then place it under the `CLASSPATH`.
-
 - Try to compile and run [this](https://github.com/ControlSystemStudio/phoebus/blob/master/core/pv-pva/src/test/java/org/phoebus/pv/pva/PVACustomStructDemo.java) example after changing the PV name.
 
  
 ## Running the Analysis
 
-- Explore the examples posted.
-
+- Once, both pva client (from Phoebus) and plotting library (from groot) jar files are under your `CLASSPATH`, you should be able to explore/run the examples posted.
+- The examples posted assumes that a demo IOC is already running in the background.
 
 
