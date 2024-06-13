@@ -15,13 +15,14 @@ public class GrootPvaHist
     {
         final PV pv = PVPool.getPV("pva://demo:circle:x");
 	H1F histogram = new H1F("histogram", 300, -2, 2);
+	histogram.setOptStat(111111);
 	TCanvas c1 = new TCanvas("c1", 800, 600);
 	c1.draw(histogram);
 	
         try
         {
             // Await connection
-            CountDownLatch connect = new CountDownLatch(30);
+            CountDownLatch connect = new CountDownLatch(1000);
             pv.onValueEvent().subscribe(value ->
             {
                 // System.out.println(pv.getName() + " = " + value);
@@ -40,6 +41,7 @@ public class GrootPvaHist
             });
             connect.await();
 
+	    // Modify pv value if the parameter is outside some threshold
             pv.asyncWrite(0.555555555).get();
         }
         finally
