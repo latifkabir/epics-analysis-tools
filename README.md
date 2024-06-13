@@ -18,10 +18,10 @@
 
 ## Prepare java analysis library: `groot`
 
-- Clone/download the repository for this [link](https://github.com/gavalian/groot).
-- Source your environment to activete JDK 19.
+- Clone/download the repository for [this](https://github.com/gavalian/groot) repository.
+- Source your environment to activete JDK 19 if you do not have it already.
 - Generate jar package: `mvn package`
-- Generate the documentation using the shell script provided. 
+- Generate the documentation (for your reference) using the shell script provided. 
 - Save the jar with dependencies and add them to your `CLASSPATH`.
 
 ## Prepare pvAccess java client
