@@ -2,7 +2,7 @@
 
 ## Goal 
 - Add scripting and analysis tools as an independent app to Phoebus
-- Connect Java pvAccess client to a suitable java plotting/analysis library (comparison with databrowser features)
+- Connect Java pvAccess client to a suitable java plotting/analysis library 
 - Use groovy for scripting 
 - Connect to Eclipse for runtime analysis using Groovy
 - Integrate in Phoebus as an independent app
@@ -36,3 +36,7 @@
 - The examples posted assumes that a demo IOC is already running in the background.
 
 
+## To Do
+
+- Make separate Java package for epics analysis tools
+- Allow scripting using Groovy
