@@ -9,14 +9,14 @@ import java.time.Instant;
 import org.jlab.groot.data.*;
 import org.jlab.groot.ui.*;
 
-public class GrootPvaDemo
+public class GrootPvaHist
 {
     public static void main(String[] args) throws Exception
     {
         final PV pv = PVPool.getPV("pva://demo:circle:x");
-	GraphErrors gr = new GraphErrors();
+	H1F histogram = new H1F("histogram", 300, -2, 2);
 	TCanvas c1 = new TCanvas("c1", 800, 600);
-	c1.draw(gr);
+	c1.draw(histogram);
 	
         try
         {
@@ -31,7 +31,7 @@ public class GrootPvaDemo
 		
                 // System.out.println(val + " at " + time);
 
-		gr.addPoint(msec, val, 0, 0);
+		histogram.fill(val);
 		//c1.draw(gr);
 		c1.getCanvas().update();
 
