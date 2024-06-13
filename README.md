@@ -7,7 +7,7 @@
 - Connect to Eclipse for runtime analysis using Groovy
 - Integrate in Phoebus as an independent app
 
-**Summary: Analysis tool in Phoebus = pva client + Java plotting/analysis libs + Groovy + Eclipse**
+**Summary: EPICS Analysis Tools = pva client + Java plotting/analysis libs + Groovy + Eclipse**
 
 ## Java analysis library options
 - jas4pp: [jas4pp paper](https://arxiv.org/abs/2011.05329). See also, [home page for jas4pp](https://atlaswww.hep.anl.gov/asc/jas4pp/)

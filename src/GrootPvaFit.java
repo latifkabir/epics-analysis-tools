@@ -9,20 +9,19 @@ import java.time.Instant;
 import org.jlab.groot.data.*;
 import org.jlab.groot.ui.*;
 
-public class GrootPvaHist
+public class GrootPvaFit
 {
     public static void main(String[] args) throws Exception
     {
         final PV pv = PVPool.getPV("pva://demo:circle:x");
-	H1F histogram = new H1F("hist of demo:circle:x", 300, -2, 2);
-	histogram.setOptStat(111111);
+	GraphErrors gr = new GraphErrors();
 	TCanvas c1 = new TCanvas("c1", 800, 600);
-	c1.draw(histogram);
+	c1.draw(gr);
 	
         try
         {
             // Await connection
-            CountDownLatch connect = new CountDownLatch(1000);
+            CountDownLatch connect = new CountDownLatch(30);
             pv.onValueEvent().subscribe(value ->
             {
                 // System.out.println(pv.getName() + " = " + value);
@@ -32,7 +31,7 @@ public class GrootPvaHist
 		
                 // System.out.println(val + " at " + time);
 
-		histogram.fill(val);
+		gr.addPoint(msec, val, 0, 0);
 		//c1.draw(gr);
 		c1.getCanvas().update();
 
@@ -41,7 +40,6 @@ public class GrootPvaHist
             });
             connect.await();
 
-	    // Modify pv value if the parameter is outside some threshold
             pv.asyncWrite(0.555555555).get();
         }
         finally
