@@ -30,7 +30,7 @@
 - Try to compile and run [this](https://github.com/ControlSystemStudio/phoebus/blob/master/core/pv-pva/src/test/java/org/phoebus/pv/pva/PVACustomStructDemo.java) example after changing the PV name.
 
  
-## Running the Analysis
+## Running EPICS Analysis
 
 - Once, both pva client (from Phoebus) and plotting library (from groot) jar files are under your `CLASSPATH`, you should be able to explore/run the examples posted.
 - The examples posted assumes that a demo IOC is already running in the background.
