@@ -15,7 +15,7 @@ Add scripting and analysis tools as an independent app to Phoebus
 ## Java plotting/analysis library options
 - jas4pp: [jas4pp paper](https://arxiv.org/abs/2011.05329). Go to the [home page for jas4pp](https://atlaswww.hep.anl.gov/asc/jas4pp/) for details.
 - [https://jfxtras.org/](https://jfxtras.org/) ---> Do Not Use
-- [Groot GitHub repo](https://github.com/gavalian/groot) ----> **Use this for now**
+- [Groot](https://github.com/gavalian/groot) ----> **Use this for now**
 - [JFreeChart](https://www.jfree.org/index.html)
 - [DataMelt](https://datamelt.org/)
 
