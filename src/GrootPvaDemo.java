@@ -15,6 +15,9 @@ public class GrootPvaDemo
     {
         final PV pv = PVPool.getPV("pva://demo:circle:x");
 	GraphErrors gr = new GraphErrors();
+	gr.setTitle("Example Graph"); 
+	gr.setTitleX("Time");
+	gr.setTitleY("demo:circle:x");	
 	TCanvas c1 = new TCanvas("c1", 800, 600);
 	c1.draw(gr);
 	

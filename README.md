@@ -9,14 +9,14 @@
 
 **Summary: EPICS Analysis Tools = pva client + Java plotting/analysis libs + Groovy + Eclipse**
 
-## Java analysis library options
+## Java plotting/analysis library options
 - jas4pp: [jas4pp paper](https://arxiv.org/abs/2011.05329). See also, [home page for jas4pp](https://atlaswww.hep.anl.gov/asc/jas4pp/)
 - [https://jfxtras.org/](https://jfxtras.org/) ---> Do Not Use, Obsolete
 - [Groot GitHub repo](https://github.com/gavalian/groot) ----> Use this for now.
 - [JFreeChart](https://www.jfree.org/index.html)
 - [DataMelt](https://datamelt.org/)
 
-## Prepare java analysis library: `groot`
+## Prepare Java plotting library: `groot`
 
 - Clone/download the repository for [this](https://github.com/gavalian/groot) repository.
 - Source your environment to activete JDK 19 if you do not have it already.

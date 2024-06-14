@@ -6,9 +6,9 @@
  * http://www.eclipse.org/legal/epl-v10.html
  ******************************************************************************/
 
-
 import org.phoebus.pv.PV;
 import org.phoebus.pv.PVPool;
+import org.epics.vtype.VType;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -24,12 +24,13 @@ public class PvaDemo2
 
         try
         {
+	    System.out.println("PV name: " + pv.getName());
             // Await connection
             CountDownLatch connect = new CountDownLatch(10);
             pv.onValueEvent().subscribe(value -> callBack(value));
             connect.await();
 
-            pv.asyncWrite(0.555555555).get();
+            // pv.asyncWrite(0.555555555).get();
         }
         finally
         {
@@ -37,11 +38,9 @@ public class PvaDemo2
         }
     }
 
-    public static void callBack(final PV pv, VType value)
+    public static void callBack(final VType value)
     {
-	System.out.println(pv.getName() + " = " + value);
-	if (!PV.isDisconnected(value))
-	    connect.countDown();
+	System.out.println("PV = "   + value);
     }
     
 }
