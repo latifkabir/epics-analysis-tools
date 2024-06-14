@@ -24,7 +24,7 @@ public class GrootPvaDemo
         try
         {
             // Await connection
-            CountDownLatch connect = new CountDownLatch(30);
+            CountDownLatch connect = new CountDownLatch(3000);
             pv.onValueEvent().subscribe(value ->
             {
                 // System.out.println(pv.getName() + " = " + value);
