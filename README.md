@@ -13,9 +13,9 @@ Add scripting and analysis tools as an independent app to Phoebus
 **Summary: EPICS Analysis Tools = pva client + Java plotting/analysis libs + Groovy + Eclipse**
 
 ## Java plotting/analysis library options
-- jas4pp: [jas4pp paper](https://arxiv.org/abs/2011.05329). See also, [home page for jas4pp](https://atlaswww.hep.anl.gov/asc/jas4pp/)
-- [https://jfxtras.org/](https://jfxtras.org/) ---> Do Not Use, Obsolete
-- [Groot GitHub repo](https://github.com/gavalian/groot) ----> Use this for now.
+- jas4pp: [jas4pp paper](https://arxiv.org/abs/2011.05329). Go to the [home page for jas4pp](https://atlaswww.hep.anl.gov/asc/jas4pp/) for details.
+- [https://jfxtras.org/](https://jfxtras.org/) ---> Do Not Use
+- [Groot GitHub repo](https://github.com/gavalian/groot) ----> **Use this for now**
 - [JFreeChart](https://www.jfree.org/index.html)
 - [DataMelt](https://datamelt.org/)
 
@@ -40,7 +40,11 @@ Add scripting and analysis tools as an independent app to Phoebus
 
 ## Demo
 
+- The following histogram is from the example analysis `GrootPvaHist.java`. It show live histogramming of the PV `demo:circle:x`. The stat box on the top right shows the number of events, mean and sigma(RMS) of the signal. 
+
 ![](demo/histogram.gif)
+
+- The following graph is generated using the example `GrootPvaDemo.java`. This graph is analogous to the strip chart. However, it is possible to add more complex analysis (fitting, transformation etc) using the script on the fly.  
 
 ![](demo/graph.gif)
 
