@@ -29,7 +29,7 @@ Add scripting and analysis tools as an independent app to Phoebus
 
 ## Prepare pvAccess Java client
 
-- If you have a local copy of Pheobus, add the following path to your `CLASSPATH`: `<phoebus build>/target/lib/`. Instead of the whole thing, you could just clone only the Phoebus core from [here](https://github.com/ControlSystemStudio/phoebus/tree/master/core) and make a jar file of the Phoebus core framework and then place it under the `CLASSPATH`.
+- If you have a local copy of Phoebus, add this path to your `CLASSPATH`: `<phoebus build>/target/lib/`. Instead of the whole thing, you could just clone only the Phoebus core from [here](https://github.com/ControlSystemStudio/phoebus/tree/master/core) and make a jar file of the Phoebus core framework and then place it under the `CLASSPATH`.
 - Try to compile and run [this](https://github.com/ControlSystemStudio/phoebus/blob/master/core/pv-pva/src/test/java/org/phoebus/pv/pva/PVACustomStructDemo.java) example after changing the PV name.
 
  
