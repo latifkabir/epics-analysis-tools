@@ -40,7 +40,7 @@ Add scripting and analysis tools as an independent app to Phoebus
 
 ## Demo
 
-- The following histogram is from the example analysis `GrootPvaHist.java`. It show live histogramming of the PV `demo:circle:x`. The stat box on the top right shows the number of events, mean and sigma(RMS) of the signal. 
+- The following histogram is from the example analysis `GrootPvaHist.java`. It shows live histogramming of the PV `demo:circle:x`. The stat box on the top right shows the number of events, mean and sigma(RMS) of the signal. 
 
 ![](demo/histogram.gif)
 
@@ -50,5 +50,5 @@ Add scripting and analysis tools as an independent app to Phoebus
 
 ## To Do
 
-- Implement separate Java package for the epics analysis tools.
+- Implement a separate Java package for the epics analysis tools.
 - Allow scripting using Groovy
